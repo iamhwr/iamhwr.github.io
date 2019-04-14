@@ -1,10 +1,726 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <title>i am HWR</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FontAwesome5 Icons  -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <title>Lefa Moffat - Online Resume</title>
+    <style>
+        
+        /*
+        .container {
+            border: 1px solid blue;
+        }
+
+        .col {
+            border: 1px solid red;
+        }
+        
+        .row {
+            border: 3px solid black;
+        }
+
+        .card-body {
+            border: 3px solid pink;
+            padding:0em;
+        }
+        */
+
+
+        
+        
+        /* footer for the copyright section */
+        footer {
+            margin: 1em;
+        }
+
+        .container-section {
+            margin-top: 0.5rem;
+        }
+
+        h4 {
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+            border-bottom: 1px dashed white;
+        }
+
+        h4:hover {
+            border-bottom: 1px dashed lightgrey;
+        }
+
+        h6 {
+            color: gray;
+            font-size: 1rem;
+        }
+
+        .quote {
+            font-size: 0.75rem;
+            font-style: italic;
+            color: gray;
+        }
+        .btn-contact {
+           justify-content: center;
+           margin: 25%;
+       }
+
+       /* This controls the visual of the secion header (i.e. About, Work,...) */
+
+       .btn-header {
+            color: black;
+            text-decoration: none !important;
+            width: 100%;
+            height: auto;
+            font-size: 150px;   
+        }
+
+        /* This controls the icons/images in the work section */
+        .btn-company {
+            background-color: white;
+            color: white;
+            margin-bottom: 0.5em; 
+        }
+
+        .btn-company:hover {
+            background-color: white;
+            color: grey;
+            border: 1px solid black;
+            box-shadow: 10px 10px;
+        }
+
+        .btn-company .img-fluid {
+            width: 250px;
+        }
+
+        .btn-motelone .img-fluid {
+            padding-bottom: 50px;
+        }
+
+        /* This adds a right border line for the about me section*/
+        .col-description {
+            text-align: right;
+            border-right: 1px solid black;
+        }
+        
+        /* This is for the icons/images in the project section */
+        .col-projects {
+            text-align: center;
+        }
+
+        .col-projects img {
+            padding: 0.5em;
+            
+        }
+
+        .container-programming {
+            margin-bottom: 1.25rem;
+        }
+        /* This changes the color of the award/certificate icon in the progress bar in the interest section */
+        .fa-award {
+            color: #007BFF;
+        }
+
+        .fa-award:hover {
+            color: white;
+        }
+    
+        .img-icons {
+            height: 100px;
+
+        }
+
+        img + p {
+            margin-top: 0.5em;
+        }
+        
+        /* This controls each section of content */
+        .row-content {
+            border: 1px solid white;
+            margin: 1em;
+            
+        }
+
+        .row-content:hover {
+
+            border: 1px solid rgb(247, 242, 242);
+            border-radius: 10px;
+            box-shadow: 10px;
+        }
+
+        .row-site {
+            height: 100%;
+        }
+
+        /* This changes the social media icons in the about section */
+        .social-icons {
+
+            color: black;
+            text-decoration: none !important;
+            padding-right: 0.25em;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class=" d-flex align-content-stretch flex-wrap container-fluid container-site">
+        <div class="row row-site">
+            <div class="col col-md-4 col-12 col-nav navbar-dark bg-dark">
+                <nav class="navbar sticky-top">
+                    <img src="./images/me.jpg" class="img-thumbnail" alt="">
+                    <div class="navbar-nav">
+                        <a class="navbar-brand" href="#">Lefa Moffat</a>
+                        <a class="nav-link" href="#about">About me</a>
+                        <a class="nav-link" href="#work">Work Experience</a>
+                        <a class="nav-link" href="#interests">Interests and Skills</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col col-md-8 col12 col-body ">
+                <div class="container container-section" id="about">
+                    <div class="card">
+                        <div class="card-header" id="heading-about">
+                            <button class="btn btn-link btn-header" data-toggle="collapse" data-target="#collapse-about"
+                                aria-expanded="true" aria-controls="collapse-about">
+                                <h1 id="about">About me</h1>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="collapse-about" class="collapse show" aria-labelledby="heading-about" data-parent="#about">
+                        <div class="card-body">
+                            <div class="row row-content">
+                                <div class="col text-center">
+                                    <h4>"Hello, World!" <br/> Welcome to my online resume!</h4> 
+                                    <h5>I'm a person who believes that anything is possible. I like to challenge myself with new things that excite me and just see where life takes me. </h5>
+                                    <h6 class="quote"> <br/>"To succeed in anything you only need to do two things: <br/> Start and don't give up!" - Grandmaster Tan</h6>
+                                </div>
+                            </div>
+                            <div class="row row-content">
+                                <div class="col col-6 col-description">
+                                    Languages
+                                </div>
+                                <div class="col col-6 col-content">
+                                    German, English 
+                                </div>
+                                <div class="col col-6 col-description">
+                                    Current Location
+                                </div>
+                                <div class="col col-6 col-content">
+                                    United Kingdom
+                                </div>
+                                <div class="col col-6 col-description">
+                                    Age
+                                </div>
+                                <div class="col col-6 col-content">
+                                    27
+                                </div>
+                                <div class="col col-6 col-description">
+                                    Social Media
+                                </div>
+                                <div class="col col-6 col-content">
+                                    <a href="https://github.com/iamhwr" class="fab social-icons fa-github"></a>
+                                    <a href="https://facebook.com/lefa.moffat" class="fab social-icons fa-facebook"></a>
+                                    <a href="https://www.xing.com/profile/Lefa_Moffat/" class="fab social-icons fa-xing"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-section" id="work">
+                    <div class="card">
+                        <div class="card-header" id="heading-work">
+                            <button class="btn btn-link btn-header" data-toggle="collapse" data-target="#collapse-work"
+                                aria-expanded="false" aria-controls="collapse-work">
+                                <h1 id="work">Work Experience</h1>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="collapse-work" class="collapse" aria-labelledby="heading-work" data-parent="#work">
+                        <div class="row row-content">
+                            <div class="col col-12 col-md-4 ">
+                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                    data-target="#btn-namyang" aria-expanded="false" aria-controls="btn-namyang"
+                                    aria-pressed="true">
+                                    <img class="img-fluid" src="./images/companies/namyang.png" alt="">
+                                    <i class='fas fa-angle-down'></i>
+                                </button>
+                                <div class="collapse" id="btn-namyang">
+                                    <div class="card card-body">
+                                        <p>
+                                            116 M. 5, Mae Na Toeng <br />
+                                            Pai District, 58130, Thailand
+                                        </p>
+                                        <p><a href="https://www.kungfuretreat.com">www.kungfuretreat.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-8">
+                                <h6>01.05.2017 – 31.11.2018</h6>
+                                <h2>Apprentice Instructor</h2>
+                                <p>The Kung Fu Retreat is located in a beautiful location in the mountains of nothern
+                                    Thailand. The Apprentice program consisted of first learning and teaching Kung Fu.
+                                    This included Qi Gong, Meditation and Fitness. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-content">
+                            <div class="col col-12 col-md-4 ">
+                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                    data-target="#btn-motelone" aria-expanded="false" aria-controls="btn-motelone"
+                                    aria-pressed="true">
+                                    <img class="img-fluid" src="./images/companies/motel_one.png" alt="">
+                                    <i class='fas fa-angle-down'></i>
+                                </button>
+
+                                </p>
+                                <div class="collapse" id="btn-motelone">
+                                    <div class="card card-body">
+                                        <p>
+                                            Hanauer Landstr. 142 <br />
+                                            60314 Frankfurt am Main, Germany
+                                        </p>
+                                        <p><a href="www.motel-one.com">www.motel-one.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-8">
+                                <h6>01.01.2016 – 30.04.2017</h6>
+                                <h2>Front Office Clerk</h2>
+                                <p>Attending to guests dealing with reservations and Food & Beverages. </p>
+                            </div>
+                        </div>
+                        <div class="row row-content">
+                            <div class="col col-12 col-md-4 ">
+                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                    data-target="#btn-flemings" aria-expanded="false" aria-controls="btn-flemings"
+                                    aria-pressed="true">
+                                    <img class="img-fluid" src="./images/companies/flemings.jpg" alt="">
+                                    <i class='fas fa-angle-down'></i>
+                                </button>
+
+                                </p>
+                                <div class="collapse" id="btn-flemings">
+                                    <div class="card card-body">
+                                        <p>
+                                            Eschenheimer Tor 2 <br />
+                                            60318 Frankfurt am Main, Germany
+                                        </p>
+                                        <p><a href="www.flemings-hotels.com">www.flemings-hotels.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-8">
+                                <h6>01.02.2015 – 31.12.2015</h6>
+                                <h2>Front Office Clerk</h2>
+                                <p>Attending to guests dealing with reservations. </p>
+                            </div>
+                        </div>
+                        <div class="row row-content">
+                            <div class="col col-12 col-md-4 ">
+                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                    data-target="#btn-metropolitan" aria-expanded="false"
+                                    aria-controls="btn-metropolitan" aria-pressed="true">
+                                    <img class="img-fluid" src="./images/companies/steigenberger_metropolitan.png"
+                                        alt="">
+                                    <i class='fas fa-angle-down'></i>
+                                </button>
+
+                                </p>
+                                <div class="collapse" id="btn-metropolitan">
+                                    <div class="card card-body">
+                                        <p>
+                                            Eschenheimer Tor 2 <br />
+                                            60318 Frankfurt am Main, Germany
+                                        </p>
+                                        <p><a href="www.flemings-hotels.com">www.flemings-hotels.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-12 col-md-8">
+                                <h6>01.08.2012 – 31.01.2015 <br /> - shortened from 3 to 2,5 years </h6>
+                                <h2>Hotel Management Apprenticeship</h2>
+                                <p>Attending to guests dealing with reservations. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-section" id="interests">
+                    <div class="card">
+                        <div class="card-header" id="heading-interests">
+                            <button class="btn btn-link collapsed btn-header" data-toggle="collapse"
+                                data-target="#collapse-interests" aria-expanded="false"
+                                aria-controls="collapse-interests">
+                                <h1>Interests</h1>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="collapse-interests" class="collapse" aria-labelledby="heading-interests"
+                        data-parent="#interests">
+                        <div class="card-body">
+                            <div class="row row-content">
+                                <div class="col text-center">
+                                    <h5>Here are a few things that I like to do on a daily basis.</h5>
+                                    <h6 class="quote"> <br/> "The more you learn, <br/> the more you realize how little you know." - Artistole</h6>
+                                </div>
+                            </div>
+                            <div class="row row-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4>Programming </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container container-programming">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <h6>Web Languages </h6>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <div class="row ">
+                                                <div class="col col-12 col-md-6">
+                                                    HTML5
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    CSS3
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    JavaScript
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    TypeScript
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container container-programming ">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <h6>Other Languages </h6>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Java
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    C#
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    SQL
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><i class="fas fa-award"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Python
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Dart
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container container-programming">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <h6>Web Frameworks</h6>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Angular
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    BootStrap
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Django
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container container-programming">
+                                        <div class="row">
+                                            <div class="col col-12">
+                                                <h6>Mobile App Frameworks</h6>
+                                            </div>
+                                        </div>
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    Flutter
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar align-middle" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    NativeScript
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    ReactNative
+                                                </div>
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4>Self Development</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col">
+                                                <img class="img-fluid img-icons" src="./images/interests/meditation.png" alt="Meditation">
+                                            <p>Meditation </p>
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid img-icons" src="./images/interests/martial_arts.png" alt="Martial Arts">
+                                            <p>Martial Arts </p>
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid img-icons" src="./images/interests/reading.png" alt="reading">
+                                            <p>Reading</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="row row-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4>Investing</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <img class="img-fluid img-icons" src="./images/interests/equity_investing.png" alt="">
+                                            <p>Equity Investing </p>
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid img-icons" src="./images/interests/algorithmic_trading.png" alt="">
+                                            <p> Algorithmic Trading </p>
+                                        </div>
+                                        <div class="col">
+                                            <img class="img-fluid img-icons" src="./images/interests/real_estate.png" alt="">
+                                            <p> Real Estate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-section" id="projects">
+                    <div class="card">
+                        <div class="card-header" id="heading-projects">
+                            <button class="btn btn-link collapsed btn-header" data-toggle="collapse"
+                                data-target="#collapse-projects" aria-expanded="false"
+                                aria-controls="collapse-projects">
+                                <h1>Projects</h1>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="collapse-projects" class="collapse" aria-labelledby="heading-projects"
+                        data-parent="#projects">
+                        <div class="card-body">
+                            <div class="row row-content">
+                                <div class="col">
+                                    <h5 class="text-center">These are some of the projects I'm currently involved in.</h5>
+                                </div>
+                            </div>
+                            <div class="row row-content">
+                               
+                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
+                                    <img class="img-fluid img-icons" src="./images/projects/web_development.png" alt="">
+                                    <p> Web Development </p>
+                                </div>
+                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
+                                    <img class="img-fluid img-icons" src="./images/projects/mobile_apps.png" alt="">
+                                    <p>Mobile App Development</p>
+                                </div>
+                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
+                                    <img class="img-fluid img-icons" src="./images/projects/iot.png" alt="">
+                                    <p>Internet of Things</p>
+                                </div>
+                                <div class="col col-12 col-md-6 col-sm-6 col-projects">
+                                    <img class="img-fluid img-icons" src="./images/projects/data_science.png" alt="">
+                                    <p>Data Science</p>
+                                </div>
+                                <div class="col col-12 col-md-6 col-sm-12 col-projects">
+                                    <img class="img-fluid img-icons" src="./images/projects/machine_learning.png"
+                                        alt="">
+                                    <p> Machine Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-section" id="contact">
+                    <div class="card">
+                        <div class="card-header" id="heading-contact">
+                            <button class="btn btn-link collapsed btn-header" data-toggle="collapse"
+                                data-target="#collapse-contact" aria-expanded="false" aria-controls="collapse-contact">
+                                <h1>Contact</h1>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="collapse-contact" class="collapse" aria-labelledby="heading-contact"
+                        data-parent="#contact">
+                        <div class="card-body">
+                            <div class="row row-content row-contact">
+                                <div class="col col-12 col-lg-6 text-center">
+                                    <h4>Thanks for stopping by!</h4>
+                                    <p>Think that we could do something together? <br /> Or just wanna say Hi? </p>
+                                    <p>Then just drop me a mail! I'll try to get back to you as soon as I can.</p>
+                                </div>
+                                <div class="col col-12 col-lg-6 text-center">
+                                    <form action="mailto:lefakmoffat@gmail.com" method="POST" enctype="text/plain">
+                                        <button class="btn btn-primary btn-contact" type="submit"><i
+                                                class="fas fa-envelope"></i> Contact me</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col text-center justify-content-center align-self-center">
+                            <h7>&#169 2019 Lefa Moffat</h7>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

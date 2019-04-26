@@ -14,8 +14,17 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
         integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
+    <!-- General Styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- General Styling - Print Version -->
+    <link media="print" href="print.css">
+
+    <!-- PrintJS library -->
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+
     <title>Lefa Moffat - Online Resume</title>
-    <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
@@ -31,7 +40,12 @@
                         <a class="nav-link" href="#interests">Interests and Skills</a>
                         <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#contact">Contact</a>
+                        <button type="btn btn-primary btn-print" onclick="printJS('./Resume.pdf')">
+                            <i class="fa fa-print"></i><span> Print </span>
+                        </button>
                     </div>
+                                                        
+                   
                 </nav>
             </div>
             <div class="col col-md-8 col12 col-body ">
@@ -260,7 +274,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    JavaScript
+                                                    JavaScript (E6)
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -289,7 +303,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    Java
+                                                    Java 8
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -350,7 +364,7 @@
                                         <div class="container text-center">
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    Angular
+                                                    Angular 2
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -360,7 +374,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    BootStrap
+                                                    ReactJS
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -370,7 +384,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    Django
+                                                    Bootstrap 4 
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -399,7 +413,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    NativeScript
+                                                    ReactNative
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -409,7 +423,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col col-12 col-md-6">
-                                                    ReactNative
+                                                    Ionic
                                                 </div>
                                                 <div class="col col-12 col-md-6">
                                                     <div class="progress">
@@ -429,15 +443,15 @@
                                         </div>
                                     </div>
                                     <div class="row text-center">
-                                        <div class="col">
+                                        <div class="col col-4">
                                                 <img class="img-fluid img-icons" src="./images/interests/meditation.png" alt="Meditation">
                                             <p>Meditation </p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col col-4">
                                             <img class="img-fluid img-icons" src="./images/interests/martial_arts.png" alt="Martial Arts">
                                             <p>Martial Arts </p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col col-4">
                                             <img class="img-fluid img-icons" src="./images/interests/reading.png" alt="reading">
                                             <p>Reading</p>
                                         </div>
@@ -452,15 +466,15 @@
                                         </div>
                                     </div>
                                     <div class="row text-center">
-                                        <div class="col">
+                                        <div class="col col-4">
                                             <img class="img-fluid img-icons" src="./images/interests/equity_investing.png" alt="">
                                             <p>Equity Investing </p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col col-4">
                                             <img class="img-fluid img-icons" src="./images/interests/algorithmic_trading.png" alt="">
                                             <p> Algorithmic Trading </p>
                                         </div>
-                                        <div class="col">
+                                        <div class="col col-4">
                                             <img class="img-fluid img-icons" src="./images/interests/real_estate.png" alt="">
                                             <p> Real Estate</p>
                                         </div>
@@ -491,26 +505,18 @@
                             </div>
                             <div class="row row-content">
                                
-                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
+                                <div class="col col-md-4 col-sm-12 col-projects">
                                     <img class="img-fluid img-icons" src="./images/projects/web_development.png" alt="">
-                                    <p> Web Development </p>
+                                    <p> App Development </p>
                                 </div>
-                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
-                                    <img class="img-fluid img-icons" src="./images/projects/mobile_apps.png" alt="">
-                                    <p>Mobile App Development</p>
-                                </div>
-                                <div class="col col-12 col-md-4 col-sm-6 col-projects">
+                                <div class="col col-md-4 col-sm-12 col-projects">
                                     <img class="img-fluid img-icons" src="./images/projects/iot.png" alt="">
-                                    <p>Internet of Things</p>
+                                    <p>Cloud / IoT</p>
                                 </div>
-                                <div class="col col-12 col-md-6 col-sm-6 col-projects">
-                                    <img class="img-fluid img-icons" src="./images/projects/data_science.png" alt="">
-                                    <p>Data Science</p>
-                                </div>
-                                <div class="col col-12 col-md-6 col-sm-12 col-projects">
+                                <div class="col col-md-4 col-sm-12 col-projects">
                                     <img class="img-fluid img-icons" src="./images/projects/machine_learning.png"
                                         alt="">
-                                    <p> Machine Learning</p>
+                                    <p> Machine Learning </p>
                                 </div>
                             </div>
                         </div>

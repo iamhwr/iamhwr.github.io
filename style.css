@@ -16,8 +16,6 @@
     
     */
     
-  
-
     /* Navbar */
     .btn-print + span {
         max-width: 0;
@@ -28,46 +26,6 @@
     white-space: nowrap;
     overflow: hidden;
     }
-
-    .small-screen-only {
-        display: none;
-    }
-
-    @media only screen and (max-width: 600px) {
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial;
-          }
-          
-        .small-screen-only {
-            display: flex;
-        }
-
-        #mobile-header {
-            padding-top: 0.7em;
-            padding-bottom: 0.3em;
-            color: rgb(223, 219, 219);
-        }
-        .col-nav {
-            height: 100%;
-            padding-top: auto;
-            padding-bottom: auto;
-        }
-
-        .navbar-nav{
-
-            justify-content: space-between;
-            width: 100%;
-            color: white;
-            height: 100%;
-
-        }
-        
-        .navbar-nav .navbar-brand{
-          display: none;
-        }
-      }
     
     /* This controls the visual of the secion header (i.e. About, Work,...) */
 
@@ -229,4 +187,45 @@
     .btn-contact a {
         color: white;
         text-decoration: none;
+    }
+
+    /* MOBILE CSS CHANGES*/
+
+    .small-screen-only {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+          }
+          
+        .small-screen-only {
+            display: flex;
+        }
+
+        #mobile-header {
+            padding-top: 0.7em;
+            padding-bottom: 0.3em;
+            color: rgb(223, 219, 219);
+        }
+        .col-nav {
+            height: 100%;
+            padding-top: auto;
+            padding-bottom: auto;
+        }
+
+        .navbar-nav{
+
+            justify-content: space-between;
+            width: 100%;
+            color: white;
+            height: 100%;
+        }
+        
+        .navbar-nav .navbar-brand{
+            display: none;
+        }
     }

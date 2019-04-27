@@ -33,19 +33,18 @@
             <div class="col col-md-4 col-12 col-nav navbar-dark bg-dark">
                 <nav class="navbar sticky-top">
                     <img src="./images/me.jpg" class="img-thumbnail" alt="">
+                    <h3 class="small-screen-only text-center" id="mobile-header">Lefa Moffat - Online Resume</h3>
                     <div class="navbar-nav">
                         <a class="navbar-brand" href="#">Lefa Moffat</a>
                         <a class="nav-link" href="#about">About me</a>
                         <a class="nav-link" href="#work">Work Experience</a>
-                        <a class="nav-link" href="#interests">Interests and Skills</a>
+                        <a class="nav-link" href="#interests">Interests</a>
                         <a class="nav-link" href="#projects">Projects</a>
                         <a class="nav-link" href="#contact">Contact</a>
-                        <button type="btn btn-primary btn-print" onclick="printJS('./Resume.pdf')">
-                            <i class="fa fa-print"></i><span> Print </span>
-                        </button>
                     </div>
-                                                        
-                   
+                    <button type="btn btn-primary btn-print" onclick="printJS('./Resume.pdf')">
+                        <i class="fa fa-print"></i><span> Print </span>
+                    </button>
                 </nav>
             </div>
             <div class="col col-md-8 col12 col-body ">
@@ -110,13 +109,13 @@
                     <div id="collapse-work" class="collapse" aria-labelledby="heading-work" data-parent="#work">
                         <div class="row row-content">
                             <div class="col col-12 col-md-4 ">
-                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                <button class="btn btn-company" type="button" data-toggle="collapse"
                                     data-target="#btn-namyang" aria-expanded="false" aria-controls="btn-namyang"
                                     aria-pressed="true">
                                     <img class="img-fluid" src="./images/companies/namyang.png" alt="">
                                     <i class='fas fa-angle-down'></i>
                                 </button>
-                                <div class="collapse" id="btn-namyang">
+                                <div class="collapse show" id="btn-namyang">
                                     <div class="card card-body card-work">
                                         <p>
                                             116 M. 5, Mae Na Toeng <br />
@@ -143,7 +142,7 @@
                         </div>
                         <div class="row row-content">
                             <div class="col col-12 col-md-4 ">
-                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                <button class="btn btn-company motelone-logo" type="button" data-toggle="collapse"
                                     data-target="#btn-motelone" aria-expanded="false" aria-controls="btn-motelone"
                                     aria-pressed="true">
                                     <img class="img-fluid" src="./images/companies/motel_one.png" alt="">
@@ -169,7 +168,7 @@
                         </div>
                         <div class="row row-content">
                             <div class="col col-12 col-md-4 ">
-                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                <button class="btn btn-company" type="button" data-toggle="collapse"
                                     data-target="#btn-flemings" aria-expanded="false" aria-controls="btn-flemings"
                                     aria-pressed="true">
                                     <img class="img-fluid" src="./images/companies/flemings.jpg" alt="">
@@ -195,7 +194,7 @@
                         </div>
                         <div class="row row-content">
                             <div class="col col-12 col-md-4 ">
-                                <button class="btn btn-company active" type="button" data-toggle="collapse"
+                                <button class="btn btn-company" type="button" data-toggle="collapse"
                                     data-target="#btn-metropolitan" aria-expanded="false"
                                     aria-controls="btn-metropolitan" aria-pressed="true">
                                     <img class="img-fluid" src="./images/companies/steigenberger_metropolitan.png"
@@ -509,24 +508,28 @@
                         data-parent="#projects">
                         <div class="card-body">
                             <div class="row row-content">
-                                <div class="col">
-                                    <h5 class="text-center">These are some of the projects I'm currently involved in.</h5>
-                                </div>
-                            </div>
-                            <div class="row row-content">
-                               
-                                <div class="col col-md-4 col-sm-12 col-projects">
-                                    <img class="img-fluid img-icons" src="./images/projects/web_development.png" alt="">
-                                    <p> App Development </p>
-                                </div>
-                                <div class="col col-md-4 col-sm-12 col-projects">
-                                    <img class="img-fluid img-icons" src="./images/projects/iot.png" alt="">
-                                    <p>Cloud / IoT</p>
-                                </div>
-                                <div class="col col-md-4 col-sm-12 col-projects">
-                                    <img class="img-fluid img-icons" src="./images/projects/machine_learning.png"
-                                        alt="">
-                                    <p> Machine Learning </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="text-center">These are some of the projects I'm currently involved in.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                    
+                                        <div class="col col-md-4 col-sm-12 col-projects">
+                                            <img class="img-fluid img-icons" src="./images/projects/web_development.png" alt="">
+                                            <p> App Development </p>
+                                        </div>
+                                        <div class="col col-md-4 col-sm-12 col-projects">
+                                            <img class="img-fluid img-icons" src="./images/projects/iot.png" alt="">
+                                            <p>Cloud / IoT</p>
+                                        </div>
+                                        <div class="col col-md-4 col-sm-12 col-projects">
+                                            <img class="img-fluid img-icons" src="./images/projects/machine_learning.png"
+                                                alt="">
+                                            <p> Machine Learning </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -551,12 +554,14 @@
                                     <p>Think that we could do something together? <br /> Or just wanna say Hi? </p>
                                     <p>Then just drop me a mail! I'll try to get back to you as soon as I can.</p>
                                 </div>
-                                <div class="col col-12 col-lgs-6 text-center">
-                                    <form action="mailto:lefakmoffat@gmail.com" method="POST" enctype="text/plain">
-                                        <button class="btn btn-primary btn-contact" type="submit"><i
-                                                class="fas fa-envelope"></i> Contact me</button>
+                                <div class="col col-12 col-lg-6 text-center">
+                                    <form>
+                                        <button class="btn btn-primary btn-contact">
+                                            <i class="fas fa-envelope"></i> 
+                                            <a href="mailto:lefakmoffat@gmail.com">Contact me</a>
+                                        </button>
                                     </form>
-                                    <a href="mailto:lefakmoffat@gmail.com">mail</a>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -196,29 +196,27 @@
     }
 
     @media only screen and (max-width: 600px) {
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial;
-          }
           
         .small-screen-only {
             display: flex;
         }
 
         #mobile-header {
+            min-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+
             padding-top: 0.7em;
             padding-bottom: 0.3em;
             color: rgb(223, 219, 219);
         }
         .col-nav {
             height: 100%;
-            padding-top: auto;
+            padding-top: 15px;
             padding-bottom: auto;
         }
 
         .navbar-nav{
-
             justify-content: space-between;
             width: 100%;
             color: white;
@@ -227,5 +225,8 @@
         
         .navbar-nav .navbar-brand{
             display: none;
+        }
+        .navbar-nav .nav-link {
+            font-size: 17px;
         }
     }

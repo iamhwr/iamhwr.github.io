@@ -62,12 +62,28 @@
         box-shadow: 10px 10px;
     }
 
+    .card-container {
+        background-color: rgba(0,0,0,.03);
+        border-radius: 1rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
     .card .card-header {
-        height: 100px;
+        height: 108px;
         overflow: hidden;
         width: 100%;
-        padding-left:0px;
-        padding-right:0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+
+    .card-header {
+        align-items: center;
+        margin-bottom: 0;
+        display: flex;
+        border: none;
+        background-color: transparent;
     }
 
     .btn-company .img-fluid {
@@ -112,6 +128,7 @@
     .container-programming {
         margin-bottom: 1.25rem;
     }
+   
     /* This changes the color of the award/certificate icon in the progress bar in the interest section */
     .certificate:hover {
         color: #007BFF;
@@ -135,8 +152,9 @@
     /* This controls each section of content */
     .row-content {
         border: 1px solid white;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         
     }
 
@@ -165,9 +183,7 @@
         margin: 1em;
     }
 
-    .container-section {
-        margin-top: 0.5rem;
-    }
+  
 
     h4 {
         padding-top: 1em;

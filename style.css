@@ -23,12 +23,12 @@
     /* Navbar */
     .btn-print + span {
         max-width: 0;
-    -webkit-transition: max-width 1s;
-    transition: max-width 1s;
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-    overflow: hidden;
+        -webkit-transition: max-width 1s;
+        transition: max-width 1s;
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     /* This controls the visual of the secion header (i.e. About, Work,...) */
@@ -60,6 +60,14 @@
         color: grey;
         border: 1px solid black;
         box-shadow: 10px 10px;
+    }
+
+    .card .card-header {
+        height: 100px;
+        overflow: hidden;
+        width: 100%;
+        padding-left:0px;
+        padding-right:0px;
     }
 
     .btn-company .img-fluid {
@@ -218,6 +226,10 @@
             height: 100%;
             padding-top: 15px;
             padding-bottom: auto;
+        }
+        
+        .container-section {
+            padding: 0px;
         }
 
         .navbar-nav{

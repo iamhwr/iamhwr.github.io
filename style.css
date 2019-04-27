@@ -85,7 +85,8 @@
         border: none;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
-        margin:1em 1em 1em 1.5em;
+        padding-bottom: 0.5em;
+        margin:0.5em 1em 0.5em 1em;
     }
 
     .card-work p {
@@ -112,13 +113,15 @@
         margin-bottom: 1.25rem;
     }
     /* This changes the color of the award/certificate icon in the progress bar in the interest section */
-    .fa-award {
+    .certificate:hover {
         color: #007BFF;
+        cursor: pointer;
     }
 
-    .fa-award:hover {
-        color: white;
+    .certificate span  {
+        outline: none;
     }
+
 
     .img-icons {
         height: 100px;
@@ -207,7 +210,7 @@
         display: none;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 576px) {
           
         .small-screen-only {
             display: flex;

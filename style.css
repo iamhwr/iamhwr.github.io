@@ -186,6 +186,11 @@
         box-shadow: 10px;
     }
 
+    .row-programming {
+        line-height: 15px;
+        margin: 10px 0;
+    }
+
     .row-site {
         height: 100%;
     }

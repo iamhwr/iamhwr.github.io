@@ -187,7 +187,9 @@
     }
 
     .row-programming {
-        line-height: 15px;
+        display: flex;
+        align-items: center;
+        line-height: 100%;
         margin: 10px 0;
     }
 

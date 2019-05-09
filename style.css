@@ -210,14 +210,25 @@
         
     }
 
-    .carousel-caption {
-        background: rgba(0, 0, 0, 0.7);
-    }
-    
-    .carousel-control-next-icon {
-        color: #333;
+    .carousel-item {
+        align-content: center;
     }
 
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.7);
+        align-content: center;
+        padding: 1rem;
+        border-radius: 12px
+    }
+
+    .carousel-caption a {
+        
+        color: #ccc;
+    }
+    
+    .carousel-indicators {
+        margin-top: 0.5rem;
+    }
     
     /* footer for the copyright section */
     footer {
@@ -280,16 +291,8 @@
             padding-bottom: 0.3em;
             color: rgb(223, 219, 219);
         }
-        .col-nav {
-            height: 100%;
-            padding-top: 15px;
-            padding-bottom: auto;
-        }
-        
-        .container-section {
-            padding: 0px;
-        }
 
+        /* Navbar */
         .navbar-nav{
             justify-content: space-between;
             width: 100%;
@@ -303,4 +306,19 @@
         .navbar-nav .nav-link {
             font-size: 17px;
         }
+
+        .col-nav {
+            height: 100%;
+            padding-top: 15px;
+            padding-bottom: auto;
+        }
+        
+        .container-section {
+            padding: 0px;
+        }
+
+        .carousel-caption p {
+            display: none;
+        }
+        
     }
